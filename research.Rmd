@@ -21,7 +21,7 @@ AW-Fisher's method.
 
 ###Paper  Review for Journals
 * Frontiers in Genetics
-* Annals of Applied Statistics
+
 
 ### Selected Courses Taken
 * CMU ML10-725 Convex Optimization, Fall 2019
