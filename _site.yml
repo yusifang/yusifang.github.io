@@ -5,6 +5,10 @@ navbar:
   right:
     - text: "Research"
       href: research.html
+    - text: "Awards"
+      href: awards.html
+    - text: "Teaching"
+      href: teaching.html
     - icon: fa-envelope fa-lg
       href: mailto:<yuf31@pitt.edu>
     - icon: fa-github fa-lg
