@@ -11,7 +11,7 @@
 
 
 
-<title>About</title>
+<title>Research</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -70,6 +73,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="bootstrap.css" type="text/css" />
 
 
 
@@ -262,6 +266,92 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -269,6 +359,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -289,16 +389,16 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
+  <a href="mailto:&lt;yuf31@pitt.edu&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="https://github.com/yusifang">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -312,19 +412,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About</h1>
+<h1 class="title toc-ignore">Research</h1>
 
 </div>
 
 
-<div id="about-this-site" class="section level3">
-<h3>About this site</h3>
-<p>Sometimes you need to say a bit about the site – how it was made, where it’s hosted, where the source code can be found.</p>
-<p>If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.</p>
+<p>I am a PhD student in <a href="https://tsenglab.biostat.pitt.edu">Bioinformatics and Statistical Learning Group</a> under the guidance of <a href="http://www.pitt.edu/~ctseng/">Dr. George C. Tseng</a> at University of Pittsburgh, my research interests lie in the field of High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.</p>
+<div id="on-going-projects" class="section level3">
+<h3>On-Going Projects</h3>
+<ul>
+<li>Sparse signal detection via restricted AW-Fisher’s method.<br />
+</li>
+<li>Subject classification model utilizing single cell RNA sequenceing data.</li>
+<li>Detecting DE features in multiomics data using AW-Fisher’s method.</li>
+</ul>
+</div>
+<div id="publications" class="section level3">
+<h3>Publications</h3>
+<ul>
+<li><strong>Fang Y</strong>, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. <em>arXiv preprint arXiv:1908.00583. 2019 Aug 1, to be submitted</em></li>
+<li>Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, <strong>FangY</strong>, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cance rmouse models with distinct inflammation profiles. <em>Oncogene</em>. 2019 Mar;38(13):2380.</li>
+<li>Liang W, Yang Y, <strong>Fang Y</strong>, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. <em>Journal of Computational Biology</em>. 2019 May 1;26(5):495-505.</li>
+</ul>
+</div>
+<div id="paper-review-for-journals" class="section level3">
+<h3>Paper review for journals</h3>
+<ul>
+<li>Frontiers in Genetics</li>
+</ul>
+</div>
+<div id="selected-courses-taken" class="section level3">
+<h3>Selected Courses Taken</h3>
+<ul>
+<li>CMU ML10-725 Convex Optimization, Fall 2019</li>
+<li>STAT2194: Nonparametric Theory, Fall 2019</li>
+<li>STAT2194: High-dimensional Statistics, Spring 2019</li>
+<li>STAT2641: Asymptotic Methods in Statistics, Fall 2018</li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

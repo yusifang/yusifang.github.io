@@ -3,11 +3,14 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
-      href: about.html
+    - text: "Research"
+      href: research.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<yuf31@pitt.edu>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: https://github.com/yusifang
 output:
-  html_document
+  html_document:
+    #theme: cerulean
+    css: bootstrap.css
+    
