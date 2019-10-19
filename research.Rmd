@@ -25,6 +25,6 @@ AW-Fisher's method.
 
 ### Selected Courses Taken
 * CMU ML10-725 Convex Optimization, Fall 2019
-* STAT2194: Nonparametric Theory, Fall 2019
+* STAT2691: Nonparametric Theory, Fall 2019
 * STAT2194: High-dimensional Statistics, Spring 2019
 * STAT2641: Asymptotic Methods in Statistics, Fall 2018  
