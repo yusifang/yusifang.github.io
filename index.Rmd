@@ -4,7 +4,7 @@ title: "Yusi Fang"
 
 
 
-### Ph.D Student in Biostatistics
+### PhD Student in Biostatistics
 <br>
 I am a PhD student in Biostatistics at [Graduate School of Public Health](https://www.publichealth.pitt.edu/), University of Pittsburgh under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/). I am also a graduate student researcher under the guidance of [Dr. Anda M. Vlad](https://mageewomens.org/investigator/anda-m-vlad-md-ph-d) at Magee-Women's Research Institute. I received my B.S. in Mathematics and Applied Mathematics at [School of Mathematical Sciences](http://math.xmu.edu.cn/en/), Xiamen University.  
 
@@ -13,5 +13,10 @@ My research interests lie in the field of Bayesian Data Analysis, High-dimension
 <br>
 
 #### Resume
+
 My Resume is available [here](downloads/CV_Yusi.pdf).
 
+
+### My Daliy Links:
+
+[Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com), [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu),  [Pokemon go](https://www.pokemongo.com/en-us/), [BBQ Pit Boys](https://www.youtube.com/user/BarbecueWeb),  [美食作家王刚](https://www.youtube.com/channel/UCg0m_Ah8P_MQbnn77-vYnYw)
