@@ -1,5 +1,4 @@
 ---
 title: "Teaching"
 ---
-
 * 2020 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
