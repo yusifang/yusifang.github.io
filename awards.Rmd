@@ -1,6 +1,9 @@
 ---
 title: "Awards"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
-
 
 * IPAM

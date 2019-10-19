@@ -19,7 +19,7 @@ AW-Fisher's method.
 * Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **FangY**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cance rmouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
 *  Liang W, Yang Y, **Fang Y**, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. *Journal of Computational Biology*. 2019 May 1;26(5):495-505.
 
-###Paper review for journals
+###Paper  Review for Journals
 * Frontiers in Genetics
 
 
