@@ -1,12 +1,5 @@
 ---
 title: "Teaching"
-output:
-  html_document:
-    toc: true
-    toc_float: true
 ---
-
-
-
 
 * 2020 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
