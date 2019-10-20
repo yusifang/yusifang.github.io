@@ -1,7 +1,8 @@
 ---
-title: "Yusi Fang"
+title: <center> <h1> Yusi Fang </h1> </center>
 ---
-![](img/me.jpg){width=200px}
+
+<center>![](img/me.jpg){width=200px}</center>
 
 
 
