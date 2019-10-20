@@ -1,7 +1,7 @@
 ---
 title: "Yusi Fang"
 ---
-![](img/me2.jpg){width=200px}
+![](img/me.jpg){width=200px}
 
 
 
