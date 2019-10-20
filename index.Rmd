@@ -17,6 +17,6 @@ My research interests lie in the field of Bayesian Data Analysis, High-dimension
 My Resume is available [here](downloads/CV_Yusi.pdf).
 
 
-### My Daliy Links:
+### My Favorite Links:
 
-[Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com), [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu),  [Pokemon go](https://www.pokemongo.com/en-us/)
+[Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu), [Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com),  [Linear Algebra Done Wrong](http://www.math.brown.edu/~treil/papers/LADW/LADW.html),  [Pokemon go](https://www.pokemongo.com/en-us/)
