@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) at University of Pittsburgh, my research interests lie in the field of High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
+I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
 
 ### On-Going Projects
 * Sparse signal detection via restricted AW-Fisher's method.  
