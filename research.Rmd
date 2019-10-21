@@ -15,7 +15,7 @@ I am a PhD student in [Bioinformatics and Statistical Learning Group](https://ts
 AW-Fisher's method.
 
 ### Publications
-*  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1, to be submitted*
+*  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1, ready to submit*
 * Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **Fang Y**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cance rmouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
 *  Liang W, Yang Y, **Fang Y**, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. *Journal of Computational Biology*. 2019 May 1;26(5):495-505.
 
