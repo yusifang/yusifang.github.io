@@ -5,8 +5,6 @@ navbar:
   right:
     - text: "Research"
       href: research.html
-    - text: "Awards"
-      href: awards.html
     - text: "Teaching"
       href: teaching.html
     - icon: fa-envelope fa-lg

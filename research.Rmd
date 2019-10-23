@@ -29,3 +29,9 @@ AW-Fisher's method.
 * STAT2194: High-dimensional Statistics, Spring 2019
 * STAT2641: Asymptotic Methods in Statistics, Fall 2018  
 * BIOST2063: Bayesian Data Science, Spring 2019
+
+### Awards 
+*  Outstanding Undergraduate Thesis, 2017, Xiamen Unicersity 
+*  Scholarship of Academic Excellence, 2017, Xiamen University
+*  Scholarship of Academic Excellence, 2016, Xiamen University
+*  Scholarship of Academic Excellence, 2015, Xiamen University
