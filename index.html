@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -86,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -235,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -246,18 +246,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -331,7 +319,7 @@ Yusi Fang
 <p><br> I am a PhD student in Biostatistics at <a href="https://www.publichealth.pitt.edu/">Graduate School of Public Health</a>, University of Pittsburgh under the guidance of <a href="http://www.pitt.edu/~ctseng/">Dr. George C. Tseng</a>. I am also a graduate student researcher under the guidance of <a href="https://mageewomens.org/investigator/anda-m-vlad-md-ph-d">Dr. Anda M. Vlad</a> at Magee-Women’s Research Institute. I received my B.S. in Mathematics and Applied Mathematics at <a href="http://math.xmu.edu.cn/en/">School of Mathematical Sciences</a>, Xiamen University.</p>
 <p>My research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.</p>
 <p><br></p>
-<p>My Resume is available <a href="downloads/cv.pdf">here</a>.</p>
+<p>My Resume is available <a href="downloads/CV3.pdf">here</a>.</p>
 <div id="links" class="section level3">
 <h3>Links:</h3>
 <p><a href="https://tsenglab.biostat.pitt.edu">Bioinformatics and Statistical Learning Group</a>, <a href="https://stats.stackexchange.com/">Cross Validated</a>, <a href="https://math.stackexchange.com">Mathematics</a>, <a href="http://www.math.brown.edu/~treil/papers/LADW/LADW.html">Linear Algebra Done Wrong</a>, <a href="http://software.broadinstitute.org/gsea/index.jsp">GSEA</a>, <a href="https://open.spotify.com/playlist/4qxAPddWh9aiPXfSn52Qd5?si=FRvk_xHVTImQIJL7KOUV4A">Spotify</a>, <a href="https://www.pokemongo.com/en-us/">Pokemon Go</a></p>
@@ -354,6 +342,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

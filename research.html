@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -89,7 +89,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -238,6 +237,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -250,48 +250,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -305,6 +266,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -340,8 +307,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -424,9 +389,9 @@ div.tocify {
 <div id="on-going-projects" class="section level3">
 <h3>On-Going Projects</h3>
 <ul>
-<li>Sparse signal detection via restricted AW-Fisher’s method.<br />
-</li>
-<li>Subject classification model utilizing single cell RNA sequenceing data.</li>
+<li>Sparse signal detection via methods for combining p-values from independent tests.</li>
+<li>Combining p-values via Box-Cox transformation.</li>
+<li>Power Calculation for single cell RNA sequenceing data.</li>
 <li>Detecting DE features in multiomics data using AW-Fisher’s method.</li>
 </ul>
 </div>
@@ -434,7 +399,7 @@ div.tocify {
 <h3>Publications</h3>
 <ul>
 <li><strong>Fang Y</strong>, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. <em>arXiv preprint arXiv:1908.00583. 2019 Aug 1, ready to submit</em></li>
-<li>Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, <strong>Fang Y</strong>, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cance rmouse models with distinct inflammation profiles. <em>Oncogene</em>. 2019 Mar;38(13):2380.</li>
+<li>Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, <strong>Fang Y</strong>, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles. <em>Oncogene</em>. 2019 Mar;38(13):2380.</li>
 <li>Liang W, Yang Y, <strong>Fang Y</strong>, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. <em>Journal of Computational Biology</em>. 2019 May 1;26(5):495-505.</li>
 </ul>
 </div>
@@ -483,6 +448,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

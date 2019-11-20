@@ -9,14 +9,15 @@ output:
 I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
 
 ### On-Going Projects
-* Sparse signal detection via restricted AW-Fisher's method.  
-* Subject classification model utilizing single cell RNA sequenceing data.
+* Sparse signal detection via methods for combining p-values from independent tests. 
+* Combining p-values via Box-Cox transformation.
+* Power Calculation for single cell RNA sequenceing data.
 * Detecting DE features in multiomics data using
 AW-Fisher's method.
 
 ### Publications
 *  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1, ready to submit*
-* Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **Fang Y**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cance rmouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
+* Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **Fang Y**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
 *  Liang W, Yang Y, **Fang Y**, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. *Journal of Computational Biology*. 2019 May 1;26(5):495-505.
 
 ###Paper  Review for Journals
