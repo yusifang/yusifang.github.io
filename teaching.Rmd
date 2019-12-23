@@ -7,3 +7,4 @@ output:
 ---
 
 * 2020 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
+* 2021 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
