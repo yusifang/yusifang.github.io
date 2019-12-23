@@ -1,5 +1,5 @@
 ---
-title: <center> <h1> Yusi Fang </h1> </center>
+title: <center> <h1> YUSI FANG </h1> </center>
 ---
 
 <center>![](img/me.jpg){width=250px}</center>
