@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
+I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) and [Dr. Zhao Ren](http://www.pitt.edu/~zren/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
 
 ### On-Going Projects
 * Optimal detection of weak and sparse signals via adaptive Fisher's method
