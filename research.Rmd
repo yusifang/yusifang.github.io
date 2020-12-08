@@ -9,18 +9,25 @@ output:
 I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genetics, Meta-analysis and Subgroup Analysis.
 
 ### On-Going Projects
-* Sparse signal detection via methods for combining p-values from independent tests. 
-* Combining p-values via Box-Cox transformation.
-* Power Calculation for single cell RNA sequenceing data.
-* Detecting DE features in multiomics data using
-AW-Fisher's method.
+* Optimal detection of weak and sparse signals via adaptive Fisher's method
+* Optimal detection of signals under multiple scenarios via p-values combination 
+* Fast computation of P-values combination methods via importance sampling and cross entropy (Joint with Wenjia Wang)
+
+### Completed projects
+* Combining p-values for dependent tests with heavy-tailed distributions
+* Outcome-guided disease subtyping for high-dimensional omics data (Joint with Peng Liu)
 
 ### Publications
-*  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1, ready to submit*
+* **Fang, Yusi** \& Tseng, George \& Chang, Chung. (2020). Combining p-values for dependent tests with heavy-tailed distributions.  *submitted to JASA*
+* Liu, Peng \& **Fang, Yusi** \& Ren, Zhao \& Tang, Lu \& Tseng, George. (2020). Outcome-Guided Disease Subtyping for High-Dimensional Omics Data.  *submitted to JASA*
+* Liu, Peng \& Liu, Silvia \& **Fang, Yusi** \& Xue, Xiangning \& Zou, Jian \& Tseng, George \& Konnikova, Liza. (2020). Recent Advances in Computer-Assisted Algorithms for Cell Subtype Identification of Cytometry Data. *Frontiers in Cell and Developmental Biology*. 8. 234. 10.3389/fcell.2020.00234. 
+* Lin, Chien-Wei \& Chang, Lun-Ching \& Ma, Tianzhou \& Oh, Hyunjung \& French, Beverly \& Puralewski, Rachel \& Mathews, Fasil \& **Fang, Yusi** \& Lewis, David \& Kennedy, James \& Mueller (Müller), Daniel J. \& Marshe, Victoria \& Jaffe, Andrew \& Chen, Qiang \& Ursini, Gianluca \& Weinberger, Daniel \& Newman, Anne \& Lenze, Eric \& Nikolova, Yuliya \& Sibille, Etienne. (2020). Older molecular brain age in severe mental illness. *Molecular Psychiatry*. 1-11. 10.1038/s41380-020-0834-1.
+* Taylor, Sarah & Wield, Alyssa & **Fang, Yusi** & Bhargava, Rohit & Lang, Susan & Tseng, George & Coffman, Lan & Oesterreich, Steffi. (2020). Endocrine biomarkers in low-grade serous ovarian cancers (LGSC) and serous ovarian tumors of low malignant potential (LMP).. *Journal of Clinical Oncology*. 38. e18045-e18045. 10.1200/JCO.2020.38.15_suppl.e18045. 
+*  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1
 * Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **Fang Y**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
 *  Liang W, Yang Y, **Fang Y**, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. *Journal of Computational Biology*. 2019 May 1;26(5):495-505.
 
-###Paper  Review for Journals
+###Paper Review for Journals
 * Frontiers in Genetics
 
 
