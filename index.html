@@ -11,8 +11,9 @@
 
 
 
-<title></title>
+<title>index.utf8</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -24,6 +25,15 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,6 +79,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 <link rel="stylesheet" href="bootstrap.css" type="text/css" />
 
@@ -285,13 +296,13 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="mailto:&lt;yuf31@pitt.edu&gt;">
-    <span class="fa fa-envelope fa-lg"></span>
+    <span class="fas fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://github.com/yusifang">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fas fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -316,10 +327,10 @@ YUSI FANG
 <center>
 <img src="img/me4.jpg" width="250" />
 </center>
-<p><br> I am a PhD student in Biostatistics at <a href="https://www.publichealth.pitt.edu/">Graduate School of Public Health</a>, University of Pittsburgh under the guidance of <a href="http://www.pitt.edu/~ctseng/">Dr. George C. Tseng</a> and <a href="http://www.pitt.edu/~zren/">Dr. Zhao Ren</a>. I am also a graduate student researcher under the guidance of <a href="https://mageewomens.org/investigator/anda-m-vlad-md-ph-d">Dr. Anda M. Vlad</a> at Magee-Women's Research Institute. I received my B.S. in Mathematics and Applied Mathematics at <a href="http://math.xmu.edu.cn/en/">School of Mathematical Sciences</a>, Xiamen University.</p>
+<p><br> I am a PhD student in Biostatistics at <a href="https://www.publichealth.pitt.edu/">Graduate School of Public Health</a>, University of Pittsburgh under the guidance of <a href="http://www.pitt.edu/~ctseng/">Dr. George C. Tseng</a> and <a href="http://www.pitt.edu/~zren/">Dr. Zhao Ren</a>. I am also a graduate student researcher under the guidance of <a href="https://mageewomens.org/investigator/anda-m-vlad-md-ph-d">Dr. Anda M. Vlad</a> at Magee-Women’s Research Institute. I received my B.S. in Mathematics and Applied Mathematics at <a href="http://math.xmu.edu.cn/en/">School of Mathematical Sciences</a>, Xiamen University.</p>
 <p>My research interests include High-dimensional Statistics, Statistical Genomics and Genetics, Meta-analysis and Subgroup Analysis.</p>
 <p><br></p>
-<p>My Resume is available <a href="downloads/Yusi%20Fang%20resume.pdf">here</a>.</p>
+<p>My Resume is available <a href="downloads/Yusi_s_Resume_2022_03.pdf">here</a>.</p>
 <div id="links" class="section level3">
 <h3>Links:</h3>
 <p><a href="https://tsenglab.biostat.pitt.edu">Bioinformatics and Statistical Learning Group</a>, <a href="https://stats.stackexchange.com/">Cross Validated</a>, <a href="https://math.stackexchange.com">Mathematics</a>, <a href="http://www.math.brown.edu/~treil/papers/LADW/LADW.html">Linear Algebra Done Wrong</a>, <a href="http://software.broadinstitute.org/gsea/index.jsp">GSEA</a>, <a href="https://open.spotify.com/playlist/4qxAPddWh9aiPXfSn52Qd5?si=FRvk_xHVTImQIJL7KOUV4A">Spotify</a>, <a href="https://www.pokemongo.com/en-us/">Pokemon Go</a></p>
@@ -334,7 +345,7 @@ YUSI FANG
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
