@@ -18,8 +18,8 @@ I am a PhD student in [Bioinformatics and Statistical Learning Group](https://ts
 * Outcome-guided disease subtyping for high-dimensional omics data (Joint with Peng Liu)
 
 ### Publications
-* **Fang, Yusi** \& Tseng, George \& Chang, Chung. (2020). Combining p-values for dependent tests with heavy-tailed distributions.  *submitted to JASA*
-* Liu, Peng \& **Fang, Yusi** \& Ren, Zhao \& Tang, Lu \& Tseng, George. (2020). Outcome-Guided Disease Subtyping for High-Dimensional Omics Data.  *submitted to AOAS*
+* **Fang, Yusi** \& Tseng, George \& Chang, Chung. (2020). Combining p-values for dependent tests with heavy-tailed distributions.  *Under review in Statistica Sinica*
+* Liu, Peng \& **Fang, Yusi** \& Ren, Zhao \& Tang, Lu \& Tseng, George. (2020). Outcome-Guided Disease Subtyping for High-Dimensional Omics Data.  *Under review in Biometrics*
 * Liu, Peng \& Liu, Silvia \& **Fang, Yusi** \& Xue, Xiangning \& Zou, Jian \& Tseng, George \& Konnikova, Liza. (2020). Recent Advances in Computer-Assisted Algorithms for Cell Subtype Identification of Cytometry Data. *Frontiers in Cell and Developmental Biology*. 8. 234. 10.3389/fcell.2020.00234. 
 * Lin, Chien-Wei \& Chang, Lun-Ching \& Ma, Tianzhou \& Oh, Hyunjung \& French, Beverly \& Puralewski, Rachel \& Mathews, Fasil \& **Fang, Yusi** \& Lewis, David \& Kennedy, James \& Mueller (Müller), Daniel J. \& Marshe, Victoria \& Jaffe, Andrew \& Chen, Qiang \& Ursini, Gianluca \& Weinberger, Daniel \& Newman, Anne \& Lenze, Eric \& Nikolova, Yuliya \& Sibille, Etienne. (2020). Older molecular brain age in severe mental illness. *Molecular Psychiatry*. 1-11. 10.1038/s41380-020-0834-1.
 * Taylor, Sarah & Wield, Alyssa & **Fang, Yusi** & Bhargava, Rohit & Lang, Susan & Tseng, George & Coffman, Lan & Oesterreich, Steffi. (2020). Endocrine biomarkers in low-grade serous ovarian cancers (LGSC) and serous ovarian tumors of low malignant potential (LMP).. *Journal of Clinical Oncology*. 38. e18045-e18045. 10.1200/JCO.2020.38.15_suppl.e18045. 
@@ -44,3 +44,7 @@ I am a PhD student in [Bioinformatics and Statistical Learning Group](https://ts
 *  Scholarship of Academic Excellence, 2017, Xiamen University
 *  Scholarship of Academic Excellence, 2016, Xiamen University
 *  Scholarship of Academic Excellence, 2015, Xiamen University
+* IPAM workshop in ``Emerging
+Opportunities for Mathematics in the Microbiome” travel award, 2020
+* Pitt biostatistics research day best presentation honorable mention, 2022
+* SDSS travel award, 2022
