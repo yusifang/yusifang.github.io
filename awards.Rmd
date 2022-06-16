@@ -9,3 +9,4 @@ output:
 * IPAM workshop in ``Emerging
 Opportunities for Mathematics in the Microbiome” travel award, 2020
 * Pitt biostatistics research day best presentation honorable mention, 2022
+* SDSS travel award, 2022
