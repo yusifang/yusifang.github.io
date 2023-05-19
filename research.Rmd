@@ -22,7 +22,7 @@ My research interests include Large-Scale Inference, Meta-Analysis of Heterogene
 
 4. **Yusi Fang**, Zhao Ren, George Tseng. (2023+). "Adaptive Fisher’s method using weakly geometric grid for combining p-values with application to COVID 19 surveillance." *submitted. *
 
-5. Wenjia Wang, **Yusi Fang**, Chung Chang, George Tseng (2023+). "Accurate and ultra-efficient p-value calculation for higher criticism tests." *submitted.*
+5. Wenjia Wang, **Yusi Fang**, Chung Chang, George Tseng (2023+). "Accurate and ultra-efficient p-value calculation for higher criticism tests." *Under revision in JCGS.*
 
 6. Wei Liang, Yuxiao Yang, **Yusi Fang**, Zhongyi Zhao, Jie Hu. (2019). "Bayesian detection of abnormal asynchrony of division between sister cells in mutant caenorhabditis elegans embryos." *Journal of Computational Biology*, 26(5), 495-505.
 
