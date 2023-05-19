@@ -18,4 +18,4 @@ My Resume is available [here](downloads/Yusi_s_Resume__JHR_.pdf).
 
 ### Links:
 
-[Google Scholar](https://scholar.google.com/citations?user=9IA20PIAAAAJ&hl=en), [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu), [Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com),  [Linear Algebra Done Wrong](http://www.math.brown.edu/~treil/papers/LADW/LADW.html).
+[My Google Scholar](https://scholar.google.com/citations?user=9IA20PIAAAAJ&hl=en), [My Advisor's Lab Website](https://tsenglab.biostat.pitt.edu), [Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com),  [Linear Algebra Done Wrong](http://www.math.brown.edu/~treil/papers/LADW/LADW.html).
