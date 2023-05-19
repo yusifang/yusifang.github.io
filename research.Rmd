@@ -6,45 +6,75 @@ output:
     toc_float: true
 ---
 
-I am a PhD student in [Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu) under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) and [Dr. Zhao Ren](http://www.pitt.edu/~zren/) at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genomics and Genetics, Meta-analysis and Subgroup Analysis.
+My research interests include Large-Scale Inference, Meta-Analysis of Heterogeneous Signals, and Statistical Learning with applications to Statistical Genomics and Genetics.
 
-### On-Going Projects
-* Optimal detection of weak and sparse signals via adaptive Fisher's method
-* Optimal detection of signals under multiple scenarios via p-values combination 
-* Fast computation of P-values combination methods via importance sampling and cross entropy methods (Joint with Wenjia Wang)
 
-### Completed Projects
-* Combining p-values for dependent tests with heavy-tailed distributions
-* Outcome-guided disease subtyping for high-dimensional omics data (Joint with Peng Liu)
+
+
 
 ### Publications
-* **Fang, Yusi** \& Tseng, George \& Chang, Chung. (2020). Combining p-values for dependent tests with heavy-tailed distributions.  *Under review in Statistica Sinica*
-* Liu, Peng \& **Fang, Yusi** \& Ren, Zhao \& Tang, Lu \& Tseng, George. (2020). Outcome-Guided Disease Subtyping for High-Dimensional Omics Data.  *Under review in Biometrics*
-* Liu, Peng \& Liu, Silvia \& **Fang, Yusi** \& Xue, Xiangning \& Zou, Jian \& Tseng, George \& Konnikova, Liza. (2020). Recent Advances in Computer-Assisted Algorithms for Cell Subtype Identification of Cytometry Data. *Frontiers in Cell and Developmental Biology*. 8. 234. 10.3389/fcell.2020.00234. 
-* Lin, Chien-Wei \& Chang, Lun-Ching \& Ma, Tianzhou \& Oh, Hyunjung \& French, Beverly \& Puralewski, Rachel \& Mathews, Fasil \& **Fang, Yusi** \& Lewis, David \& Kennedy, James \& Mueller (Müller), Daniel J. \& Marshe, Victoria \& Jaffe, Andrew \& Chen, Qiang \& Ursini, Gianluca \& Weinberger, Daniel \& Newman, Anne \& Lenze, Eric \& Nikolova, Yuliya \& Sibille, Etienne. (2020). Older molecular brain age in severe mental illness. *Molecular Psychiatry*. 1-11. 10.1038/s41380-020-0834-1.
-* Taylor, Sarah & Wield, Alyssa & **Fang, Yusi** & Bhargava, Rohit & Lang, Susan & Tseng, George & Coffman, Lan & Oesterreich, Steffi. (2020). Endocrine biomarkers in low-grade serous ovarian cancers (LGSC) and serous ovarian tumors of low malignant potential (LMP).. *Journal of Clinical Oncology*. 38. e18045-e18045. 10.1200/JCO.2020.38.15_suppl.e18045. 
-*  **Fang Y**, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1
-* Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, **Fang Y**, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles. *Oncogene*. 2019 Mar;38(13):2380.
-*  Liang W, Yang Y, **Fang Y**, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. *Journal of Computational Biology*. 2019 May 1;26(5):495-505.
 
-###Paper Review for Journals
+#### Methodology
+
+1. **Yusi Fang**, Chung Chang, Yongseok Part, George Tseng. (2023+) "Heavy-tailed distribution for combining dependent p-values with asymptotic robustness." *Statistica Sinica, to appear. *
+2. **Yusi Fang**, Chung Chang, George Tseng. (2023+). "On p-value combination of independent and non-sparse signals: asymptotic efficiency and Fisher ensemble." *Statistica Sinica, to appear.*
+3. Yujia Li$^*$, **Yusi Fang**$^*$, Hung-Ching Chang, Michael Gorczyca, Peng Liu, George Tseng. (2023+). "Adaptively integrative association between multivariate phenotypes and transcriptomic data for complex diseases."  *Genes, to appear* ($^*$ co-first author)
+
+4. **Yusi Fang**, Zhao Ren, George Tseng. (2023+). "Adaptive Fisher’s method using weakly geometric grid for combining p-values with application to COVID 19 surveillance." *submitted. *
+
+5. Wenjia Wang, **Yusi Fang**, Chung Chang, George Tseng (2023+). "Accurate and ultra-efficient p-value calculation for higher criticism tests." *submitted.*
+
+6. Wei Liang, Yuxiao Yang, **Yusi Fang**, Zhongyi Zhao, Jie Hu. (2019). "Bayesian detection of abnormal asynchrony of division between sister cells in mutant caenorhabditis elegans embryos." *Journal of Computational Biology*, 26(5), 495-505.
+
+
+#### Application
+
+1. Nasrazadani, Azadeh, Yujia Li, **Yusi Fang**, Osama Shah, Jennifer M. Atkinson, Joanna S. Lee, Priscilla F. McAuliffe et al. "Mixed invasive ductal lobular carcinoma is clinically and pathologically more similar to invasive lobular than ductal carcinoma." (2023). *British Journal of Cancer*, 1-10.
+
+2. Adria S. Mora, Mary Strange, **Yusi Fang**, Ibrahim Uygun, Lixin Zhang, George C. Tseng, Pawel Kalinski, Robert P. Edwards, and Anda M. Vlad. (2022). "Longitudinal Modulation of Loco-Regional Immunity in Ovarian Cancer Patients Receiving Intraperitoneal Chemotherapy." *Cancers*, 14(22), 5647.
+
+3. Orr, Brian, Haider Mahdi, **Yusi Fang**, Mary Strange, Ibrahim Uygun, Mainpal Rana, Lixin Zhang, Adria Mora, Alexandra Pusateri,  Esther Elishaev, Chaeryon Kang, George Tseng, William Gooding, Robert Edwards, Pawel Kalinski, Anda Vlad. (2022). "Phase I trial combining chemokine-targeting with loco-regional chemoimmunotherapy for recurrent, platinum-sensitive ovarian cancer shows induction of CXCR3 ligands and markers of type 1 immunity." *Clinical Cancer Research*, 28(10), 2038-2049.
+
+4. Li, Zheqi, Olivia McGinn, Yang Wu, Amir Bahreini, Nolan M. Priedigkeit, Kai Ding, Carol Sartorius, Lori Miller, Margaret Rosenzweig, Nikhil Wagle, Jennifer Richer, William Muller, Laki Buluwela, Simak Ali, **Yusi Fang**, Li Zhu, George Tseng, Jason Gertz, Jennifer Atkinson, Adrian Lee, Steffi Oesterreich. (2022). "ESR1 mutant breast cancers show elevated basal cytokeratins and immune activation." *Nature Communications*, 13(1), 1-18.
+
+5. Carleton, Neil, Jian Zou, **Yusi Fang**, Stephen E. Koscumb, Osama Shiraz Shah, Fangyuan Chen, Sushil Beriwal, Emilia Diego, Adam Brufsky, Steffi Oesterreich, Steven Shapiro, Robert Ferris, Leisha Emens, George Tseng, Oscar Marroquin, Adrian Lee, Priscilla McAuliffe. (2021). "Outcomes After Sentinel Lymph Node Biopsy and Radiotherapy in Older Women With Early-Stage, Estrogen Receptor–Positive Breast Cancer." *JAMA Network Open*, 4(4), e216322-e216322.
+
+6. Lin, Chien-Wei, Lun-Ching Chang, Tianzhou Ma, Hyunjung Oh, Beverly French, Rachel Puralewski, Fasil Mathews, **Yusi Fang**, David Lewis, James Kennedy, Daniel J. Mueller (Müller), Victoria Marshe, Andrew Jaffe, Qiang Chen, Gianluca Ursini, Daniel Weinberger, Anne Newman, Eric Lenze, Yuliya Nikolova, Etienne Sibille. (2021). "Older molecular brain age in severe mental illness." *Molecular Psychiatry*, 26(7), 3646-3656.
+
+7. Liu, Peng, Silvia Liu, **Yusi Fang**, Xiangning Xue, Jian Zou, George Tseng, and Liza Konnikova. (2020). "Recent advances in computer-assisted algorithms for cell subtype identification of cytometry data." *Frontiers in Cell and Developmental Biology*, 8, 234.
+
+8. Shannon Grabosch, Mirna Bulatovic, Feitianzhi Zeng, Tianzhou Ma, Lixin Zhang, Malcolm Ross, Joan Brozick, **Yusi Fang**, George Tseng, Eun Kim, Andrea Gambotto, Esther Elishaev, Robert Edwards, Anda Vlad. (2019). "Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles." *Oncogene*, 38(13), 2380-2393.
+
+### Manuscripts in Prepartion
+
+1. **Yusi Fang**, Chung Chang,  George Tseng, Zhao Ren (2023+). "AF-HM: Optimal p-value combination for detecting both dense or sparse signals." *manuscript in preparation.*
+
+2. Rick Chang, **Yusi Fang**, George Tseng. (2023+). "PECMAN: A partial sum method for high-dimensional mediation analysis in radiomics study."  *manuscript in preparation*
+
+### Paper Review
 * Frontiers in Genetics
+* Journal of Computational and Graphical Statistics
+* Nucleic Acids Research
 
 
 ### Selected Courses Taken
+* STAT2641: Asymptotic Methods in Statistics, Fall 2020
+* BIOST2054: Survival Analysis, Spring 2020
 * STAT2691: Nonparametric Theory, Fall 2019
 * STAT2194: High-dimensional Statistics, Spring 2019
-* STAT2641: Asymptotic Methods in Statistics, Fall 2020
 * BIOST2063: Bayesian Data Science, Spring 2019
-* BIOST2054: Survival Analysis, Spring 2020
 * BIOST2086: Applied Mixed Models Analysis, fall 2019
 
 ### Awards 
+* ASA Pittsburgh Chapter Student of the Year, 2023
+* SDSS travel award, 2022
+* Pitt biostatistics research day best presentation honorable mention, 2022
+* IPAM workshop in "Emerging
+Opportunities for Mathematics in the Microbiome” travel award, 2020
 *  Outstanding Undergraduate Thesis, 2017, Xiamen Unicersity 
 *  Scholarship of Academic Excellence, 2017, Xiamen University
 *  Scholarship of Academic Excellence, 2016, Xiamen University
 *  Scholarship of Academic Excellence, 2015, Xiamen University
-* IPAM workshop in ``Emerging
-Opportunities for Mathematics in the Microbiome” travel award, 2020
-* Pitt biostatistics research day best presentation honorable mention, 2022
-* SDSS travel award, 2022
+
+
+

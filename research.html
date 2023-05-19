@@ -13,21 +13,30 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -39,11 +48,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -56,32 +60,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 <link rel="stylesheet" href="bootstrap.css" type="text/css" />
@@ -93,10 +72,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -113,40 +88,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -174,7 +125,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -186,7 +137,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -196,11 +147,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -212,13 +180,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -226,16 +193,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -338,7 +298,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -352,7 +312,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -372,13 +332,13 @@ div.tocify {
 </li>
 <li>
   <a href="mailto:&lt;yuf31@pitt.edu&gt;">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://github.com/yusifang">
-    <span class="fas fa-github fa-lg"></span>
+    <span class="fa fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -387,7 +347,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -396,57 +356,140 @@ div.tocify {
 </div>
 
 
-<p>I am a PhD student in <a href="https://tsenglab.biostat.pitt.edu">Bioinformatics and Statistical Learning Group</a> under the guidance of <a href="http://www.pitt.edu/~ctseng/">Dr. George C. Tseng</a> and <a href="http://www.pitt.edu/~zren/">Dr. Zhao Ren</a> at University of Pittsburgh, my research interests include High-dimensional Statistics, Statistical Genomics and Genetics, Meta-analysis and Subgroup Analysis.</p>
-<div id="on-going-projects" class="section level3">
-<h3>On-Going Projects</h3>
-<ul>
-<li>Optimal detection of weak and sparse signals via adaptive Fisher’s method</li>
-<li>Optimal detection of signals under multiple scenarios via p-values combination</li>
-<li>Fast computation of P-values combination methods via importance sampling and cross entropy methods (Joint with Wenjia Wang)</li>
-</ul>
-</div>
-<div id="completed-projects" class="section level3">
-<h3>Completed Projects</h3>
-<ul>
-<li>Combining p-values for dependent tests with heavy-tailed distributions</li>
-<li>Outcome-guided disease subtyping for high-dimensional omics data (Joint with Peng Liu)</li>
-</ul>
-</div>
+<p>My research interests include Large-Scale Inference, Meta-Analysis of
+Heterogeneous Signals, and Statistical Learning with applications to
+Statistical Genomics and Genetics.</p>
 <div id="publications" class="section level3">
 <h3>Publications</h3>
+<div id="methodology" class="section level4">
+<h4>Methodology</h4>
+<ol style="list-style-type: decimal">
+<li><p><strong>Yusi Fang</strong>, Chung Chang, Yongseok Part, George
+Tseng. (2023+) “Heavy-tailed distribution for combining dependent
+p-values with asymptotic robustness.” <em>Statistica Sinica, to appear.
+</em></p></li>
+<li><p><strong>Yusi Fang</strong>, Chung Chang, George Tseng. (2023+).
+“On p-value combination of independent and non-sparse signals:
+asymptotic efficiency and Fisher ensemble.” <em>Statistica Sinica, to
+appear.</em></p></li>
+<li><p>Yujia Li<span class="math inline">\(^*\)</span>, <strong>Yusi
+Fang</strong><span class="math inline">\(^*\)</span>, Hung-Ching Chang,
+Michael Gorczyca, Peng Liu, George Tseng. (2023+). “Adaptively
+integrative association between multivariate phenotypes and
+transcriptomic data for complex diseases.” <em>Genes, to appear</em>
+(<span class="math inline">\(^*\)</span> co-first author)</p></li>
+<li><p><strong>Yusi Fang</strong>, Zhao Ren, George Tseng. (2023+).
+“Adaptive Fisher’s method using weakly geometric grid for combining
+p-values with application to COVID 19 surveillance.” <em>submitted.
+</em></p></li>
+<li><p>Wenjia Wang, <strong>Yusi Fang</strong>, Chung Chang, George
+Tseng (2023+). “Accurate and ultra-efficient p-value calculation for
+higher criticism tests.” <em>submitted.</em></p></li>
+<li><p>Wei Liang, Yuxiao Yang, <strong>Yusi Fang</strong>, Zhongyi Zhao,
+Jie Hu. (2019). “Bayesian detection of abnormal asynchrony of division
+between sister cells in mutant caenorhabditis elegans embryos.”
+<em>Journal of Computational Biology</em>, 26(5), 495-505.</p></li>
+</ol>
+</div>
+<div id="application" class="section level4">
+<h4>Application</h4>
+<ol style="list-style-type: decimal">
+<li><p>Nasrazadani, Azadeh, Yujia Li, <strong>Yusi Fang</strong>, Osama
+Shah, Jennifer M. Atkinson, Joanna S. Lee, Priscilla F. McAuliffe et
+al. “Mixed invasive ductal lobular carcinoma is clinically and
+pathologically more similar to invasive lobular than ductal carcinoma.”
+(2023). <em>British Journal of Cancer</em>, 1-10.</p></li>
+<li><p>Adria S. Mora, Mary Strange, <strong>Yusi Fang</strong>, Ibrahim
+Uygun, Lixin Zhang, George C. Tseng, Pawel Kalinski, Robert P. Edwards,
+and Anda M. Vlad. (2022). “Longitudinal Modulation of Loco-Regional
+Immunity in Ovarian Cancer Patients Receiving Intraperitoneal
+Chemotherapy.” <em>Cancers</em>, 14(22), 5647.</p></li>
+<li><p>Orr, Brian, Haider Mahdi, <strong>Yusi Fang</strong>, Mary
+Strange, Ibrahim Uygun, Mainpal Rana, Lixin Zhang, Adria Mora, Alexandra
+Pusateri, Esther Elishaev, Chaeryon Kang, George Tseng, William Gooding,
+Robert Edwards, Pawel Kalinski, Anda Vlad. (2022). “Phase I trial
+combining chemokine-targeting with loco-regional chemoimmunotherapy for
+recurrent, platinum-sensitive ovarian cancer shows induction of CXCR3
+ligands and markers of type 1 immunity.” <em>Clinical Cancer
+Research</em>, 28(10), 2038-2049.</p></li>
+<li><p>Li, Zheqi, Olivia McGinn, Yang Wu, Amir Bahreini, Nolan M.
+Priedigkeit, Kai Ding, Carol Sartorius, Lori Miller, Margaret
+Rosenzweig, Nikhil Wagle, Jennifer Richer, William Muller, Laki
+Buluwela, Simak Ali, <strong>Yusi Fang</strong>, Li Zhu, George Tseng,
+Jason Gertz, Jennifer Atkinson, Adrian Lee, Steffi Oesterreich. (2022).
+“ESR1 mutant breast cancers show elevated basal cytokeratins and immune
+activation.” <em>Nature Communications</em>, 13(1), 1-18.</p></li>
+<li><p>Carleton, Neil, Jian Zou, <strong>Yusi Fang</strong>, Stephen E.
+Koscumb, Osama Shiraz Shah, Fangyuan Chen, Sushil Beriwal, Emilia Diego,
+Adam Brufsky, Steffi Oesterreich, Steven Shapiro, Robert Ferris, Leisha
+Emens, George Tseng, Oscar Marroquin, Adrian Lee, Priscilla McAuliffe.
+(2021). “Outcomes After Sentinel Lymph Node Biopsy and Radiotherapy in
+Older Women With Early-Stage, Estrogen Receptor–Positive Breast Cancer.”
+<em>JAMA Network Open</em>, 4(4), e216322-e216322.</p></li>
+<li><p>Lin, Chien-Wei, Lun-Ching Chang, Tianzhou Ma, Hyunjung Oh,
+Beverly French, Rachel Puralewski, Fasil Mathews, <strong>Yusi
+Fang</strong>, David Lewis, James Kennedy, Daniel J. Mueller (Müller),
+Victoria Marshe, Andrew Jaffe, Qiang Chen, Gianluca Ursini, Daniel
+Weinberger, Anne Newman, Eric Lenze, Yuliya Nikolova, Etienne Sibille.
+(2021). “Older molecular brain age in severe mental illness.”
+<em>Molecular Psychiatry</em>, 26(7), 3646-3656.</p></li>
+<li><p>Liu, Peng, Silvia Liu, <strong>Yusi Fang</strong>, Xiangning Xue,
+Jian Zou, George Tseng, and Liza Konnikova. (2020). “Recent advances in
+computer-assisted algorithms for cell subtype identification of
+cytometry data.” <em>Frontiers in Cell and Developmental Biology</em>,
+8, 234.</p></li>
+<li><p>Shannon Grabosch, Mirna Bulatovic, Feitianzhi Zeng, Tianzhou Ma,
+Lixin Zhang, Malcolm Ross, Joan Brozick, <strong>Yusi Fang</strong>,
+George Tseng, Eun Kim, Andrea Gambotto, Esther Elishaev, Robert Edwards,
+Anda Vlad. (2019). “Cisplatin-induced immune modulation in ovarian
+cancer mouse models with distinct inflammation profiles.”
+<em>Oncogene</em>, 38(13), 2380-2393.</p></li>
+</ol>
+</div>
+</div>
+<div id="manuscripts-in-prepartion" class="section level3">
+<h3>Manuscripts in Prepartion</h3>
+<ol style="list-style-type: decimal">
+<li><p><strong>Yusi Fang</strong>, Chung Chang, George Tseng, Zhao Ren
+(2023+). “AF-HM: Optimal p-value combination for detecting both dense or
+sparse signals.” <em>manuscript in preparation.</em></p></li>
+<li><p>Rick Chang, <strong>Yusi Fang</strong>, George Tseng. (2023+).
+“PECMAN: A partial sum method for high-dimensional mediation analysis in
+radiomics study.” <em>manuscript in preparation</em></p></li>
+</ol>
+</div>
+<div id="paper-review" class="section level3">
+<h3>Paper Review</h3>
 <ul>
-<li><strong>Fang, Yusi</strong> &amp; Tseng, George &amp; Chang, Chung. (2020). Combining p-values for dependent tests with heavy-tailed distributions. <em>Under review in Statistica Sinica</em></li>
-<li>Liu, Peng &amp; <strong>Fang, Yusi</strong> &amp; Ren, Zhao &amp; Tang, Lu &amp; Tseng, George. (2020). Outcome-Guided Disease Subtyping for High-Dimensional Omics Data. <em>Under review in Biometrics</em></li>
-<li>Liu, Peng &amp; Liu, Silvia &amp; <strong>Fang, Yusi</strong> &amp; Xue, Xiangning &amp; Zou, Jian &amp; Tseng, George &amp; Konnikova, Liza. (2020). Recent Advances in Computer-Assisted Algorithms for Cell Subtype Identification of Cytometry Data. <em>Frontiers in Cell and Developmental Biology</em>. 8. 234. 10.3389/fcell.2020.00234.</li>
-<li>Lin, Chien-Wei &amp; Chang, Lun-Ching &amp; Ma, Tianzhou &amp; Oh, Hyunjung &amp; French, Beverly &amp; Puralewski, Rachel &amp; Mathews, Fasil &amp; <strong>Fang, Yusi</strong> &amp; Lewis, David &amp; Kennedy, James &amp; Mueller (Müller), Daniel J. &amp; Marshe, Victoria &amp; Jaffe, Andrew &amp; Chen, Qiang &amp; Ursini, Gianluca &amp; Weinberger, Daniel &amp; Newman, Anne &amp; Lenze, Eric &amp; Nikolova, Yuliya &amp; Sibille, Etienne. (2020). Older molecular brain age in severe mental illness. <em>Molecular Psychiatry</em>. 1-11. 10.1038/s41380-020-0834-1.</li>
-<li>Taylor, Sarah &amp; Wield, Alyssa &amp; <strong>Fang, Yusi</strong> &amp; Bhargava, Rohit &amp; Lang, Susan &amp; Tseng, George &amp; Coffman, Lan &amp; Oesterreich, Steffi. (2020). Endocrine biomarkers in low-grade serous ovarian cancers (LGSC) and serous ovarian tumors of low malignant potential (LMP).. <em>Journal of Clinical Oncology</em>. 38. e18045-e18045. 10.1200/JCO.2020.38.15_suppl.e18045.</li>
-<li><strong>Fang Y</strong>, Tang S, Huo Z, Tseng GC, Park Y. Properties of adaptively weighted Fisher’s method. *arXiv preprint arXiv:1908.00583. 2019 Aug 1</li>
-<li>Grabosch S, Bulatovic M, Zeng F, Ma T, Zhang L,Ross M, Brozick J, <strong>Fang Y</strong>, Tseng G, Kim E, Gambotto A. Cisplatin-induced immune modulation in ovarian cancer mouse models with distinct inflammation profiles. <em>Oncogene</em>. 2019 Mar;38(13):2380.</li>
-<li>Liang W, Yang Y, <strong>Fang Y</strong>, Zhao Z, Hu J. Bayesian Detection of Abnormal Asynchrony of Division Between Sister Cells in Mutant Caenorhabditis elegansEmbryos. <em>Journal of Computational Biology</em>. 2019 May 1;26(5):495-505.</li>
+<li>Frontiers in Genetics</li>
+<li>Journal of Computational and Graphical Statistics</li>
+<li>Nucleic Acids Research</li>
 </ul>
-<p>###Paper Review for Journals * Frontiers in Genetics</p>
 </div>
 <div id="selected-courses-taken" class="section level3">
 <h3>Selected Courses Taken</h3>
 <ul>
+<li>STAT2641: Asymptotic Methods in Statistics, Fall 2020</li>
+<li>BIOST2054: Survival Analysis, Spring 2020</li>
 <li>STAT2691: Nonparametric Theory, Fall 2019</li>
 <li>STAT2194: High-dimensional Statistics, Spring 2019</li>
-<li>STAT2641: Asymptotic Methods in Statistics, Fall 2020</li>
 <li>BIOST2063: Bayesian Data Science, Spring 2019</li>
-<li>BIOST2054: Survival Analysis, Spring 2020</li>
 <li>BIOST2086: Applied Mixed Models Analysis, fall 2019</li>
 </ul>
 </div>
 <div id="awards" class="section level3">
 <h3>Awards</h3>
 <ul>
+<li>ASA Pittsburgh Chapter Student of the Year, 2023</li>
+<li>SDSS travel award, 2022</li>
+<li>Pitt biostatistics research day best presentation honorable mention,
+2022</li>
+<li>IPAM workshop in “Emerging Opportunities for Mathematics in the
+Microbiome” travel award, 2020</li>
 <li>Outstanding Undergraduate Thesis, 2017, Xiamen Unicersity</li>
 <li>Scholarship of Academic Excellence, 2017, Xiamen University</li>
 <li>Scholarship of Academic Excellence, 2016, Xiamen University</li>
 <li>Scholarship of Academic Excellence, 2015, Xiamen University</li>
-<li>IPAM workshop in ``Emerging Opportunities for Mathematics in the Microbiome” travel award, 2020</li>
-<li>Pitt biostatistics research day best presentation honorable mention, 2022</li>
-<li>SDSS travel award, 2022</li>
 </ul>
 </div>
 
@@ -479,7 +522,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -488,6 +531,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

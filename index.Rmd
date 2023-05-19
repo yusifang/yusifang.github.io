@@ -7,15 +7,15 @@ title: <center> <h1> YUSI FANG </h1> </center>
 
 
 <br>
-I am a PhD student in Biostatistics at [Graduate School of Public Health](https://www.publichealth.pitt.edu/), University of Pittsburgh under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) and [Dr. Zhao Ren](http://www.pitt.edu/~zren/). I am also a graduate student researcher under the guidance of [Dr. Anda M. Vlad](https://mageewomens.org/investigator/anda-m-vlad-md-ph-d) at Magee-Women's Research Institute. I received my B.S. in Mathematics and Applied Mathematics at [School of Mathematical Sciences](http://math.xmu.edu.cn/en/), Xiamen University.  
+Hello everyone, My name is Yusi Fang. I obtained my PhD degree in Biostatistics at [School of Public Health](https://www.publichealth.pitt.edu/), University of Pittsburgh under the guidance of [Dr. George C. Tseng](http://www.pitt.edu/~ctseng/) and [Dr. Zhao Ren](http://www.pitt.edu/~zren/). During my PhD studies, I am also a graduate student researcher under the guidance of [Dr. Anda M. Vlad](https://mageewomens.org/investigator/anda-m-vlad-md-ph-d) at Magee-Women's Research Institute. Prior to attending the PhD program, I received my B.S. in Mathematics and Applied Mathematics at [School of Mathematical Sciences](http://math.xmu.edu.cn/en/), Xiamen University.  
 
-My research interests include High-dimensional Statistics, Statistical Genomics and Genetics, Meta-analysis and Subgroup Analysis.
+My research interest lies in developing and applying statistical methods to solve real biomedical problems. My methodological research spans meta-analysis of heterogeneous signals, large-scale inference, high-dimensional mediation analysis, and unsupervised learning for omics study. On the application side, I have collaborated with researchers in the fields of cancer and psychiatry to analyze a broad range of genomic (e.g., RNAseq data) and clinical (e.g., cancer registry) data
 
 <br>
 
-My Resume is available [here](downloads/Yusi_s_Resume061622.pdf).
+My Resume is available [here](downloads/Yusi_s_Resume__JHR_.pdf).
 
 
 ### Links:
 
-[Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu), [Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com),  [Linear Algebra Done Wrong](http://www.math.brown.edu/~treil/papers/LADW/LADW.html),  [GSEA](http://software.broadinstitute.org/gsea/index.jsp), [Spotify](https://open.spotify.com/playlist/4qxAPddWh9aiPXfSn52Qd5?si=FRvk_xHVTImQIJL7KOUV4A), [Pokemon Go](https://www.pokemongo.com/en-us/)
+[Bioinformatics and Statistical Learning Group](https://tsenglab.biostat.pitt.edu), [Cross Validated](https://stats.stackexchange.com/),  [Mathematics](https://math.stackexchange.com),  [Linear Algebra Done Wrong](http://www.math.brown.edu/~treil/papers/LADW/LADW.html).

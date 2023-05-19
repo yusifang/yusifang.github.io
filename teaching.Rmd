@@ -6,5 +6,7 @@ output:
     toc_float: true
 ---
 
-* 2020 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
-* 2021 Spring, BIOST 2094 Advanced R Computing Teaching Fellow.
+* **Primary Instructor**. BIOST 2081: Mathematical Methods for Statistics, Fall 2021, University of Pittsburgh
+
+* **Primary Instructor**. BIOST 2094: Advanced R Computing, Spring 2021, University of Pittsburgh
+* **Primary Instructor**. BIOST 2094: Advanced R Computing, Spring 2020, University of Pittsburgh
