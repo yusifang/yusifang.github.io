@@ -24,7 +24,10 @@ My research interests include Large-Scale Inference, Meta-Analysis of Heterogene
 
 5. Wenjia Wang, **Yusi Fang**, Chung Chang, George Tseng (2023+). "Accurate and ultra-efficient p-value calculation for higher criticism tests." *Under revision in JCGS.*
 
-6. Wei Liang, Yuxiao Yang, **Yusi Fang**, Zhongyi Zhao, Jie Hu. (2019). "Bayesian detection of abnormal asynchrony of division between sister cells in mutant caenorhabditis elegans embryos." *Journal of Computational Biology*, 26(5), 495-505.
+6. Yujia Li, Peng Liu, Wenjia Wang, Wei Zong, Yusi Fang, Zhao Ren, Lu Tang, George C. Tseng (2023+). "Outcome-guided Disease Subtyping by Generative Model and Weighted Joint Likelihood in Transcriptomic Applications." *Under revision in AOAS.*
+
+7. Wei Liang, Yuxiao Yang, **Yusi Fang**, Zhongyi Zhao, Jie Hu. (2019). "Bayesian detection of abnormal asynchrony of division between sister cells in mutant caenorhabditis elegans embryos." *Journal of Computational Biology*, 26(5), 495-505.
+
 
 
 #### Application
